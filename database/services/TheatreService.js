@@ -1,0 +1,1 @@
+const Theatre=require('../modals/TheatreModal')
