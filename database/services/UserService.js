@@ -1,4 +1,4 @@
-const User= require("../modals/UserModal")
+const User= require("../models/UserModel")
 
 
 const addUser=async (params)=>{

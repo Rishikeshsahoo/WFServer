@@ -1,1 +1,1 @@
-const Theatre=require('../modals/TheatreModal')
+const Theatre=require('../models/TheatreModel')
