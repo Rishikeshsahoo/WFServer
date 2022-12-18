@@ -1,5 +1,9 @@
-const Movie= require('../modals/MovieModal')
+const Movie= require('../models/MovieModel')
 
+const getMovie = async () => {
+    const data = await Movie.find();
+    return data
+}
 
 const addMovie=async (params)=>{
     const movie= new Movie(params)
@@ -8,4 +12,4 @@ const addMovie=async (params)=>{
 
 
 
-module.exports={addMovie}
+module.exports={addMovie, getMovie}

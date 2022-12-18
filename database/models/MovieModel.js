@@ -11,6 +11,7 @@ const commentSchema= new mongoose.Schema({
     content:String,
     rating:String
 })
+
 const movieSchema=new mongoose.Schema({
 
     title:String,

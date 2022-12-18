@@ -1,11 +1,14 @@
 const express =require('express')
 const db=require("./database/db")
-const User=require('./database/modals/ShowModal')
-
+const User=require('./database/models/ShowModel')
+const cors = require('cors')
 const app=express()
 const port=7000;
 app.use(express.json())
 app.use(express.urlencoded({extended:true,limit:"50mb"}))
+app.use(cors({
+    origin:'http://localhost:4200'
+}))
 
 // ___________________all routers here______________________________
 const userRouter = require("./routes/UserRoutes")

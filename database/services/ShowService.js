@@ -1,5 +1,5 @@
-const Show= require("../modals/ShowModal")
-const UserModal = require("../modals/UserModal")
+const Show= require("../models/ShowModel")
+const UserModal = require("../models/UserModel")
 
 const getByIdAndData=async (params)=>{
     console.log(params)
